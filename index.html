@@ -17,9 +17,9 @@
         <nav class="main-nav">
           <a class="logo link" href="./index.html" lang="en"><span class="logo-web">Web</span><span class="logo-studio-header">Studio</span></a>
           <ul class="nav-list list">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+            <li class="item"><a class="active link" href="./index.html">Студія</a></li>
+            <li class="item"><a class="active link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="active link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contact list">
@@ -51,7 +51,7 @@
       <section class="section hero-bg">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>  
+          <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>  
         </div>
       </section>
 
@@ -124,30 +124,27 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="our-work list">
             <li class="item">
-              <img
-                src="./images/our_work/box_1.jpg"
-                alt="чоловік працюючий за комп'ютером"
-                width="370"
-                height="294">
+              <div class="img-box">
+                <img src="./images/our_work/box_1.jpg" alt="чоловік працюючий за комп'ютером" width="370" height="294">
+                <p class="label">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/our_work/box_2.jpg"
-                alt="чоловік з телефоном в руці"
-                width="370"
-                height="294">
+              <div class="img-box">
+                <img src="./images/our_work/box_2.jpg" alt="чоловік з телефоном в руці" width="370" height="294">
+                <p class="label">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/our_work/box_3.jpg"
-                alt="чоловік тримає в руці планшет"
-                width="370"
-                height="294">
+              <div class="img-box">
+                <img src="./images/our_work/box_3.jpg" alt="чоловік тримає в руці планшет" width="370" height="294">
+                <p class="label">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      
+
       <section class="section our-team-bg">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -499,12 +496,23 @@
                   height="20"
                   class="footer-soc-icons">
                   <use href="./images/icons.svg#icon-linkedin"/>
-                </svg> 
+                </svg>
               </a>
             </li>
           </ul>
         </div>
       </div>    
     </footer>
+  
+    <!-- backdrop -->
+    
+    <div data-modal class="backdrop is-hidden">
+       <div class="modal">
+        <button data-modal-close>Close</button>
+       </div>
+    </div>
+  
+  
+  <script src="./js/modal.js"></script>
   </body>
 </html>
