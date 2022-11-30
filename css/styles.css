@@ -618,3 +618,22 @@ ul {
     min-height: 581px;
     background-color: #ffffff;
 }
+
+.modal-button-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+        
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.icon-close {
+    width: 100%;
+    height: 100%;
+}
