@@ -92,33 +92,25 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .item:not(:last-child) {
     margin-right: 50px;
 } 
 
-.nav-list a:hover,
-.nav-list a:focus,
-.header-contact a:hover,
-.header-contact a:focus {
+.nav-list .link:hover,
+.nav-list .link:focus,
+.header-contact .link:hover,
+.header-contact .link:focus {
     color: var(--active-text-color);
 }
 .nav-list .item {
     position: relative;
 }
-
-/* .active::after {
-    content: "";
-    position: absolute;
-    
-    border:solid;
-    border-color: var(--active-text-color);
-    border-radius: 4px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-} */
 
 .active:hover::after {
     content: "";
@@ -151,6 +143,10 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icons {
@@ -369,6 +365,10 @@ ul {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -402,6 +402,9 @@ ul {
     border: #AFB1B8 1px solid;
     border-radius: 4px;
     
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -446,6 +449,10 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact {
@@ -453,6 +460,10 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress:hover,
@@ -483,6 +494,10 @@ ul {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -543,13 +558,17 @@ ul {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: var(--active-text-color);
     color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 /* Portfolio Projects set */
 
@@ -584,6 +603,12 @@ ul {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+}
+
+.card {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
