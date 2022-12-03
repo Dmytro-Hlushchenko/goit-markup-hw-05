@@ -131,7 +131,7 @@ ul {
     position: relative;
 }
 
-.active::after {
+.active.current::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -141,15 +141,6 @@ ul {
     height: 4px;
     background-color: var(--active-text-color);
     border-radius: 4px;
-    opacity: 0;
-
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic-bezier-primary);
-}
-
-.active:hover::after {
-    opacity: 1;
 }
 
 .header-contact {
@@ -677,7 +668,6 @@ ul {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-
 }
 
 .modal {
@@ -686,7 +676,10 @@ ul {
     min-width: 528px;
     min-height: 581px;
     background-color: #ffffff;
-   
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
     top: 50%;
     left: 50%;
 
@@ -707,12 +700,12 @@ ul {
     position: absolute;
     right: 8px;
     top: 8px;
-        
+    
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: transparent;
     cursor: pointer;
     
 }
